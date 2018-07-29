@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ici on récupère les données de la simulation en implémentant EventProcessingPlugin et on indique les interfaces
- * graphiques utilisées (ici EppUI) en implémentant PostProcessingTab
+ * Here we get the data from the simulation by implementing {@code EventProcessingPlugin} and we notify the UI we used
+ * (here {@code EppUI}) by implementing {@code PostProcessingTab}
  * @see org.seamcat.model.plugin.eventprocessing.PostProcessingTab
  * @see org.seamcat.model.plugin.eventprocessing.EventProcessingPlugin
  * @author Paul Estano
@@ -30,14 +30,14 @@ import java.util.List;
 public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
 
     /**
-     * à implémenter pour récupérer les positions des différents points (VLR,VLT, ILR, ILT en X et en Y)
+     * Mandatory to get the several points positions (VLR,VLT, ILR, ILT en X et en Y)
      * @param scenario
      * @param eventResult
      * @param input
      * @param resultCollector
      */
     public void evaluate(Scenario scenario, EventResult eventResult, Input input, Collector resultCollector )
-    {//on récupère les résultats
+    {//get the results
         for (InterferenceLink link : scenario.getInterferenceLinks()) {
 
 
@@ -64,7 +64,7 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
     }
 
     /**
-     * Inutile (pour l'instant...)
+     * Useless (for now...)
      * @param context
      * @param input
      * @param validator
@@ -73,8 +73,7 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
     public void consistencyCheck(ConsistencyCheckContext context, Input input, Validator validator){}
 
     /**
-     *
-     * @return le nom et la description du plugin
+     * @return plugin's name and description
      */
     public Description description(){
         return new DescriptionImpl("Manhattan Grid","grille de manhattan");
@@ -92,7 +91,7 @@ public class Epp implements EventProcessingPlugin<Epp.Input>,PostProcessingTab {
 
     /**
      *
-     * @return les interfaces utilisées dans le plugin
+     * @return plugin UIs
      */
     @Override
     public List<Class<? extends PostProcessingUI>> tabs() {

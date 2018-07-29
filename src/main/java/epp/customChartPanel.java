@@ -8,7 +8,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 /**
- * ChartPanel permettant de mettre un background sur lequel on peut zoomer
+ * ChartPanel with a zoomable background
  * @author placisadmin
  */
 
@@ -18,9 +18,9 @@ public class customChartPanel extends ChartPanel{
 
     /**
      *
-     * @param chart conteneur du graphique
-     * @param w longeur du graphique
-     * @param h largeur du graphique
+     * @param chart graphics container
+     * @param w graphics width
+     * @param h graphics height
      */
     public customChartPanel(JFreeChart chart, int w, int h)
     {
@@ -44,10 +44,10 @@ public class customChartPanel extends ChartPanel{
     }
 
     /**
-     * Cette méthode créé le conteneur du graphique :
+     * Create graphics container
      * <ul>
-     *     <li>elle chosit les points à afficher et leur couleur</li>
-     *     <li>elle met le graphique à la bonne taille</li>
+     *     <li>it chooses points to display and their colour</li>
+     *     <li>it sizes the graphics</li>
      * </ul>
      * @param chart graphique
      * @param width longueur du graphique

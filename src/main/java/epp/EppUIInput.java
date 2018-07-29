@@ -3,13 +3,12 @@ package epp;
 import org.seamcat.model.plugin.Config;
 
 /**
- * Cette interface correspond à une IHM dans laquelle l'utilisateur peut choisir les différents paramètres du
- * post processing.
- * Ici :
+ * This interface is matches an IHM which defines several PostProcessing parameters
+ * here:
  * <ul>
- *     <li>la position de la victime</li>
- *     <li>la largeur des rues</li>
- *     <li>le nombre de blocks</li>
+ *     <li>victim position</li>
+ *     <li>streets width</li>
+ *     <li>number of blocks</li>
  * </ul>
  * @author Paul Estano
  */

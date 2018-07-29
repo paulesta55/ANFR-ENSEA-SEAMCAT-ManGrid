@@ -1,12 +1,15 @@
 package epp;
 
-import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import org.seamcat.model.*;
+import org.seamcat.model.Scenario;
 import org.seamcat.model.plugin.eventprocessing.PanelDefinition;
 import org.seamcat.model.plugin.eventprocessing.Panels;
 import org.seamcat.model.plugin.eventprocessing.PostProcessing;
@@ -14,24 +17,18 @@ import org.seamcat.model.plugin.eventprocessing.PostProcessingUI;
 import org.seamcat.model.types.result.Results;
 import org.seamcat.model.types.result.VectorResult;
 
-import java.lang.Math;
 import javax.swing.*;
 import java.awt.*;
 
-import org.jfree.chart.axis.NumberAxis;
-import org.jfree.chart.renderer.xy.XYItemRenderer;
-import org.jfree.data.xy.XYDataset;
-import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
-
-import java.awt.image.*;
-
 /**
- * Cette Interface permet d'ajouter un environnement graphique au plugin. C'est ici qu'on affiche la grille
- * 3 méthodes sont à implémenter obligatoirement :
- * -BuildUI
- * -getTitle
- * -panelDefinition
- * l'annotation @PostProcessing permet de définir un bouton qui déclenche la méthode qu'elle précède
+ * This interface allows to add a graphical environment to the plugin. The grid is added to the UI here
+ * 3 methods are mandatory :
+ * <ul>
+ *     <li>{@code buildUI}</li>
+ *     <li>{@code getTitle}</li>
+ *     <li>{@code panelDefinition}</li>
+ * </ul>
+ * @PostProcessing instantiates a button which launches the following method
  * @author Paul Estano
  * @see org.seamcat.model.plugin.eventprocessing.PostProcessingUI
  */
