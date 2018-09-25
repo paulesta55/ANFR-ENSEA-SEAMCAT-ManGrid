@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Ensea/Projet 2A/SEAMCAT_5.2.0_MODEL.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jcommon-1.0.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +28,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Ensea/Projet 2A/jcommon-1.0.23.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jfreechart-1.0.19.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,13 +37,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/Ensea/Projet 2A/jfreechart-1.0.19.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/SEAMCAT_5.2.0_MODEL.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jfree:jfreechart:1.0.19" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
   </component>
 </module>
