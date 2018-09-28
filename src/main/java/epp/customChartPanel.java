@@ -6,7 +6,7 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 
 import java.awt.Color;
 import java.awt.Dimension;
-
+import epp.EppUI;
 /**
  * ChartPanel with a zoomable background
  * @author placisadmin
@@ -42,6 +42,7 @@ public class customChartPanel extends ChartPanel{
         this.chart=chart;
 
     }
+
 
     /**
      * Create graphics container

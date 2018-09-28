@@ -82,7 +82,7 @@ public class EppUI extends JFrame implements PostProcessingUI {
 
     /**
      * Renvoie le titre à afficher sur l'onglet de la fenêtre
-     * @return le titre de la fenêtre
+     * @return le titre de la fenêtre toto
      */
     public String getTitle() {
         return "Manhattan Grid";
