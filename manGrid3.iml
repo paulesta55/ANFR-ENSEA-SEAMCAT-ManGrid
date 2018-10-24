@@ -37,11 +37,17 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/SEAMCAT_5.2.0_MODEL.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/seamcat-model-5.2.0-alpha-2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eco.seamcat:seamcat-model:5.2.0-alpha-2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.6.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-log4j12:1.6.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jfree:jfreechart:1.0.19" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
   </component>
 </module>
